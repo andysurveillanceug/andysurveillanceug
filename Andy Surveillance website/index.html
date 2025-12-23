@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andy Surveillance Systems</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    background: #ffffff;
+    color: #1f2937;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #020617;
+    padding: 12px 20px;
+    z-index: 1000;
+    text-align: center;
+  }
+  nav .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  nav .nav-logo img {
+    height: 40px;
+    width: auto;
+  }
+  nav a {
+    color: #cbd5f5;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  nav a:hover { color: #ffffff; }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    padding: 120px 20px 80px;
+    text-align: center;
+    position: relative;
+  }
+
+  /* Header Logo */
+  header .logo {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin: 10px 0 20px;
+    letter-spacing: 1px;
+  }
+  header p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #cbd5f5;
+  }
+  .cta-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .cta-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+  }
+
+  section { padding: 80px 20px; max-width: 1100px; margin: auto; }
+  .section-title { text-align: center; margin-bottom: 40px; }
+
+  /* About */
+  .about {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 40px;
+  }
+
+  /* Services */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .service-card {
+    background: #f3f4f6;
+    border-left: 4px solid #2563eb;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  .service-card h3 {
+    margin: 0 0 15px;
+    color: #0f172a;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 8px;
+  }
+  .service-card p { font-size: 0.95rem; color: #374151; margin: 0; }
+
+  /* Footer */
+  footer {
+    background: #0f172a;
+    color: #cbd5f5;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  /* Floating Buttons */
+  .floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 2000;
+  }
+  .whatsapp-btn, .call-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease;
+  }
+  .whatsapp-btn { background: #25d366; }
+  .call-btn { background: #2563eb; }
+  .floating-buttons a:hover { transform: scale(1.1); }
+  .floating-buttons svg { width: 26px; height: 26px; fill: white; }
+
+  /* Responsive */
+  @media(max-width:768px){
+    nav a{ display:block; margin:10px 0; }
+    .services { grid-template-columns: 1fr; }
+    header h1 { font-size: 2.2rem; }
+    header p { font-size: 1rem; }
+    header .logo { width: 140px; }
+    nav .nav-logo img { height: 35px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Andy Surveillance Systems Logo">
+    </a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Header -->
+<header>
+  <img src="logo.png" alt="Andy Surveillance Systems Logo" class="logo">
+  <h1>Andy Surveillance Systems</h1>
+  <p>Professional Security, Access Control & Networking Solutions</p>
+  <p>📞 Call Us: <strong>0756889660</strong></p>
+  <a href="#contact" class="cta-btn">Get a Free Consultation</a>
+</header>
+
+<!-- About Section -->
+<section id="about">
+  <div class="section-title">
+    <h2>About Us</h2>
+    <p>Reliable and professional security solutions for homes and businesses</p>
+  </div>
+  <div class="about">
+    <p>
+      Andy Surveillance Systems specializes in the design, installation, and maintenance
+      of modern security and networking solutions. We deliver high-quality services
+      including CCTV surveillance, video intercoms, access control systems, alarm systems,
+      and structured networking to ensure safety, efficiency, and peace of mind.
+    </p>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>Solutions designed for security and performance</p>
+  </div>
+  <div class="services">
+    <div class="service-card">
+      <h3>CCTV Camera Installation</h3>
+      <p>We provide professional CCTV installation services for homes and businesses. Cameras are strategically placed for optimal coverage, ensuring 24/7 monitoring and security.</p>
+    </div>
+    <div class="service-card">
+      <h3>Networking Structure</h3>
+      <p>Structured networking systems for offices and commercial spaces ensure seamless connectivity, efficient data flow, and reliable network performance throughout your organization.</p>
+    </div>
+    <div class="service-card">
+      <h3>Alarm Systems</h3>
+      <p>We install modern alarm systems including intrusion detection, fire alarms, and emergency alerts to protect your property and provide peace of mind.</p>
+    </div>
+    <div class="service-card">
+      <h3>Access Control</h3>
+      <p>Access control systems using keycards, biometric scanners, and electronic locks regulate entry to buildings and restricted areas for enhanced security.</p>
+    </div>
+    <div class="service-card">
+      <h3>Video Intercoms</h3>
+      <p>Video intercom systems enable secure communication with visitors. See, speak to, and control access remotely for added convenience and safety.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="section-title">
+    <h2>Contact Us</h2>
+    <p>Get in touch for professional security solutions</p>
+  </div>
+  <div class="about" style="text-align:center;">
+    <p><strong>Phone / WhatsApp:</strong> 0756889660</p>
+    <p>We are ready to support your security and networking needs.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Andy Surveillance Systems. All Rights Reserved.</p>
+  <p>Call or WhatsApp: <strong>0756889660</strong></p>
+</footer>
+
+<!-- Floating WhatsApp & Call Buttons -->
+<div class="floating-buttons">
+  <a class="whatsapp-btn" href="https://wa.me/256756889660" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16 3C9.37 3 4 8.37 4 15c0 2.65.87 5.1 2.34 7.08L4 29l7.09-2.3a11.94 11.94 0 0 0 4.91 1.04C22.63 27.74 28 22.37 28 15.74 28 9.11 22.63 3 16 3zm0 21.5a9.43 9.43 0 0 1-4.81-1.31l-4.21 1.36 1.37-4.1-.22-.35a9.41 9.41 0 1 1 8.21 4.6zm5.23-6.45c-.29-.14-1.7-.84-1.96-.93-.26-.1-.46-.14-.65.14-.19.28-.74.93-.91 1.13-.17.19-.34.21-.62.07-.29-.14-1.21-.45-2.31-1.42-.85-.76-1.43-1.7-1.6-1.99-.17-.28-.02-.44.13-.59.13-.13.28-.33.43-.5.14-.17.19-.28.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.56-.88-2.14-.23-.56-.47-.49-.65-.5-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.76.36-.26.29-1 .98-1 2.4 0 1.42 1.03 2.78 1.18 2.97.14.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.64.61.69.22 1.32.19 1.81.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.34z"/></svg>
+  </a>
+  <a class="call-btn" href="tel:0756889660" aria-label="Call">
+    <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C10.07 21.03 2.97 13.93 2.97 5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
+  </a>
+</div>
+
+</body>
+</html>
